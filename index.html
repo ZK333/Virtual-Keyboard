@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VirtualKeyboard</title>
+  <link href="VirtualKeyboard.css" rel="stylesheet">
+  <script src="VirtualKeyboard.js" defer></script>
+</head>
+<body>
+
+  <div id="History">
+  History:
+  </div>
+
+  <div class="Keyboard" id="keys">
+       <div class="output">
+        <div data class="data" id="data"></div>
+      </div>
+  
+
+    <button key onclick="clicked(this)">1</button>
+    <button key onclick="clicked(this)">2</button>
+    <button key onclick="clicked(this)">3</button>
+    <button key onclick="clicked(this)">4</button>
+    <button key onclick="clicked(this)">5</button>
+    <button key onclick="clicked(this)">6</button>
+    <button key onclick="clicked(this)">7</button>
+    <button key onclick="clicked(this)">8</button>
+    <button key onclick="clicked(this)">9</button>
+    <button key onclick="clicked(this)">0</button>
+    <button data-equals class="span-two" key onclick="Switch(this)">Caps</button>
+
+    <button id="q" key onclick="clicked(this)">q</button> </button>
+    <button id="w" key onclick="clicked(this)">w</button>
+    <button id="e" key onclick="clicked(this)">e</button>
+    <button id="r" key onclick="clicked(this)">r</button>
+    <button id="t" key onclick="clicked(this)">t</button>
+    <button id="y" key onclick="clicked(this)">y</button>
+    <button id="u" key onclick="clicked(this)">u</button>
+    <button id="i" key onclick="clicked(this)">i</button>
+    <button id="o" key onclick="clicked(this)">o</button>
+    <button id="p" key onclick="clicked(this)">p</button>
+
+    <button data-equals class="span-two" key onclick="backspace()">Backspace</button>
+
+    <button key onclick="clicked(this)">.</button>
+    <button id="a" key onclick="clicked(this)">a</button>
+    <button id="s" key onclick="clicked(this)">s</button>
+    <button id="d" key onclick="clicked(this)">d</button>
+    <button id="f" key onclick="clicked(this)">f</button>
+    <button id="g" key onclick="clicked(this)">g</button>
+    <button id="h" key onclick="clicked(this)">h</button>
+    <button id="j" key onclick="clicked(this)">j</button>
+    <button id="k" key onclick="clicked(this)">k</button>
+    <button id="l" key onclick="clicked(this)">l</button>
+    <button data-equals class="span-two" key onclick="enter()">Enter</button>
+    
+    <button key onclick="clicked(this)">$</button>
+    <button key onclick="clicked(this)">"</button>
+    <button id="z" key onclick="clicked(this)">z</button>
+    <button id="x" key onclick="clicked(this)">x</button>
+    <button id="c" key onclick="clicked(this)">c</button>
+    <button id="v" key onclick="clicked(this)">v</button>
+    <button id="b" key onclick="clicked(this)">b</button>
+    <button id="n" key onclick="clicked(this)">n</button>
+    <button id="m" key onclick="clicked(this)">m</button>
+    <button key onclick="clicked(this)">@</button>
+
+    <button data-equals class="span-two" key onclick="clearOutput()">Clear</button>
+
+    <div data class="data" id="data"></div>
+
+    
+    <button class="Space" key onclick="space()"> SPACE </button>
+
+  </div>
+</body>
+</html>
