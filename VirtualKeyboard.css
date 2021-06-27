@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  border-radius: 4px;
+  font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(2, 88, 2, 0.774),rgba(60,88,2,0.774));
+  }
+  
+  .Keyboard {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+  }
+  
+  .Keyboard> button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background: rgb(4, 180, 250,0.2);
+    color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .Keyboard> button:hover {
+    background-color: rgba(240, 280, 350, 0.75);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .output .data{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+
+  .Space{
+    padding: 10px;
+    grid-column: 1 / -1;
+  }
+
+  
+
+ 
